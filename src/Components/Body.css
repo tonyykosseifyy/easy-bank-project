@@ -1,0 +1,23 @@
+.body {
+  width: 100% ;
+  min-height: 200vh ;
+  background-color: #FAFAFA ;
+  position: relative;
+}
+.overlay {
+  width: 100% ;
+  min-height: calc(100vh - 80px) ;
+  position: fixed ;
+  top: 0 ;
+  z-index : 200 ;
+  background: linear-gradient(180deg , black , rgb(58, 50, 50) , white) ;
+  opacity: .0;
+  z-index: -1 ; 
+  transition: .3s ease-out ;
+  bottom: 0 ;
+}
+
+.start-overlay {
+  z-index: 0 ;
+  opacity: .7 
+}
