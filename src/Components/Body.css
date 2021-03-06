@@ -21,3 +21,26 @@
   z-index: 0 ;
   opacity: .7 
 }
+
+.body-up {
+  display: flex ;
+}
+.body-up-right {
+    flex: .5 ;
+    background-color: black 
+}
+.body-up-right > svg {
+  transform: scale(0.5) 
+}
+.body-up-left > h1 {
+  font-size : clamp(2rem , 3rem , 4rem )  
+}
+.body-up-left > p {
+  color: #ADACB2 ;
+  max-width: 300px ;
+  line-height: 2 ;
+  
+}
+.body-up-left {
+  flex: .5
+}
