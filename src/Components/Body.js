@@ -2,14 +2,21 @@ import React from 'react';
 import './Body.css' ;
 import Button from './Button' ;
 import imageMockup from '../Assets/image-mockups.png'
-import { cardData } from '../Assets/data' ;
+import { cardData , blogData } from '../Assets/data' ;
 import Card from './Card' ;
 import { budgeting , api , onboarding , online } from '../Assets/cardImages'
+import Blog from './Blog'
+import currencyImage from '../Assets/image-currency.jpg' ;
+import resImage from '../Assets/image-restaurant.jpg' ;
+import planeImage from '../Assets/image-plane.jpg' ;
+import confImage from '../Assets/image-confetti.jpg' ;
 
 
 const Body = ({ open }) => {
 	const data = cardData ;
 	const svgs = [ online , budgeting , onboarding , api ] ;
+	const blogs = blogData ;
+	const images = [currencyImage , resImage , planeImage , confImage ]
   return (
     <main className='body'>
     	<div className={`overlay ${open && 'start-overlay'}`}></div>
@@ -30,6 +37,14 @@ const Body = ({ open }) => {
 			<div className='body-mid-cards'>
 				{ data.map((item , index) => (
 					<Card key={index} item={item} svg={svgs[index]} />
+				))}
+			</div>
+		</div>
+		<div className='body-bottom'>
+			<h1>Latest Articles</h1>
+			<div className='body-mid-cards'>
+				{ blogs.map((item , index) => (
+					<Blog key={index} item={item} image={images[index]} />
 				))}
 			</div>
 		</div>

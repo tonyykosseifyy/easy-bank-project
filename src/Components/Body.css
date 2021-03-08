@@ -66,6 +66,7 @@
 }
 .body-mid {
     padding: 12vh 7vw ; 
+    padding-bottom: 0vh ;
 }
 .body-mid > h1 {
   font-size : clamp(1.4em , 2.9em , 6.2em )  ; 
@@ -84,7 +85,15 @@
   padding-right: 2.5vw ;
   grid-template-rows: auto ;
   grid-template-columns: auto auto auto auto ;
-  margin: 11vh 0 ;
+  margin: 10vh 0 ;
+}
+.body-bottom {
+  background-color: #FAFAFA ;
+  padding: 12vh 7vw ; 
+}
+.body-bottom > h1 {
+  font-size : clamp(1.4em , 2.9em , 6.2em )  ; 
+  font-weight: 300 ;
 }
 @media screen and (max-width: 1150px) {
   .body-mid-cards {
