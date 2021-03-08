@@ -14,6 +14,7 @@ const Body = ({ open }) => {
 				<p>Take your financial life online. Your Easy Bank account will be a one-stop-shop for spending , saving , budgeting , investing and much more</p>
 				<Button />
         	</div>
+			
 			<div className='body-up-right'>
 				<img src={imageMockup} alt='decoration' />
 			</div>
