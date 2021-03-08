@@ -22,5 +22,4 @@ const Body = ({ open }) => {
 } ;
 
 
-
 export default Body;
