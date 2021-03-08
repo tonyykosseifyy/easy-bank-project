@@ -1,0 +1,21 @@
+.card {
+    margin: 0 13px ;
+    flex : 100 ;
+}
+
+.card > h1 {
+    font-size: clamp(1rem, 1.6rem , 3rem ) ;
+    font-weight: 300 ;
+    margin: 25px 0 ;
+}
+
+.card > p {
+    color: #919096 ;
+    line-height: 1.6 ;
+}
+
+@media screen and (max-width: 1150px) {
+    .card {
+        margin: 30px 13px ;
+    }
+}

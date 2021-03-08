@@ -1,6 +1,5 @@
 .body {
   width: 100% ;
-  min-height: 200vh ;
   background-color: #F4F5F7 ;
   position: relative;
   overflow-x : hidden ;
@@ -65,8 +64,39 @@
     -ms-transform: translate(130px ,-130px);
     -o-transform: translate(130px ,-130px);
 }
-
+.body-mid {
+    padding: 12vh 7vw ; 
+}
+.body-mid > h1 {
+  font-size : clamp(1.4em , 2.9em , 6.2em )  ; 
+  font-weight: 300 ;
+  margin-bottom: 25px ;
+}
+.body-mid > p {
+  color: #ADACB2 ;
+  line-height: 1.8 ;
+  font-size: 18px ;
+  margin-top: 10px ;
+  max-width: 55% ;
+}
+.body-mid-cards {
+  display: grid ;
+  padding-right: 2.5vw ;
+  grid-template-rows: auto ;
+  grid-template-columns: auto auto auto auto ;
+  margin: 11vh 0 ;
+}
+@media screen and (max-width: 1150px) {
+  .body-mid-cards {
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50% ;
+  }
+}
 @media screen and (max-width: 800px) {
+  .body-mid-cards {
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(4 , 25% ) ;
+  }
   .body-up {
     max-height: none !important ;
     flex-direction: column-reverse ;
@@ -80,14 +110,17 @@
       -ms-transform: translate(0 ,-130px);
       -o-transform: translate(0 ,-130px);
 }
+  .body-mid-cards {
+    padding: 0 5vw ;
+  }
   .body-up-left {
     text-align: center ;
-    padding: 0vh 5vw ;
+    padding: 3vh 5vw ;
     flex: auto ;
   }
   .body-up-left > button {
     margin: 0 auto ;
-    margin-bottom: 18vh ;
+    margin-bottom: 15vh ;
   }
   .body-up-right {
     flex: auto;
@@ -95,6 +128,16 @@
   }
   .body-up-left > h1 {
     font-size: 2rem ;
+  }
+  .body-mid > h1 {
+    max-width: 100% ;
+  }
+  .body-mid > p {
+    max-width: 100% ;
+  }
+  .body-mid {
+    padding: 10vh 5vw ;
+    text-align: center ;
   }
 }
 
