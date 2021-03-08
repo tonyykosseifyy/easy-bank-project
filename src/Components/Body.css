@@ -1,8 +1,9 @@
 .body {
   width: 100% ;
   min-height: 200vh ;
-  background-color: #FAFAFA ;
+  background-color: #F4F5F7 ;
   position: relative;
+  overflow-x : hidden ;
 }
 .overlay {
   width: 100% ;
@@ -18,29 +19,87 @@
 }
 
 .start-overlay {
-  z-index: 0 ;
+  z-index: 2 ;
   opacity: .7 
 }
 
 .body-up {
   display: flex ;
+  background-color: #FAFAFA ;
+  max-height: 650px ;
 }
 .body-up-right {
-    flex: .5 ;
-    background-color: black 
+    flex: .55 ;
+    background-image : url('../Assets/heroDesktop.svg') ;
+    background-repeat: no-repeat ;
 }
-.body-up-right > svg {
-  transform: scale(0.5) 
-}
+
 .body-up-left > h1 {
-  font-size : clamp(2rem , 3rem , 4rem )  
+  font-size : clamp(1.3em , 3.5em , 4.2em )  ; 
+  font-weight: 300 ;
+  margin: 20px 0 ;
 }
 .body-up-left > p {
   color: #ADACB2 ;
-  max-width: 300px ;
-  line-height: 2 ;
-  
+  line-height: 1.8 ;
+  font-size: 18px ;
+  margin-bottom: 20px ;
+  margin-top: 10px ;
 }
+
 .body-up-left {
-  flex: .5
+  padding-left: 7vw ;
+  padding-right: 10px ;
+  flex: .45 ;
+  display: flex ;
+  flex-direction: column ;
+  align-items: left ;
+  justify-content: center ;
+  background-repeat: no-repeat
+}
+.body-up-right > img {
+    position: relative ;
+    transform: translate(130px ,-130px);
+    -webkit-transform: translate(130px ,-130px);
+    -moz-transform: translate(130px ,-130px);
+    -ms-transform: translate(130px ,-130px);
+    -o-transform: translate(130px ,-130px);
+}
+
+@media screen and (max-width: 800px) {
+  .body-up {
+    max-height: none !important ;
+    flex-direction: column-reverse ;
+  }
+  .body-up-right > img {
+    width: 100% ;
+      margin: 0 auto ;
+      transform: translate(0 ,-130px);
+      -webkit-transform: translate(0 ,-130px);
+      -moz-transform: translate(0 ,-130px);
+      -ms-transform: translate(0 ,-130px);
+      -o-transform: translate(0 ,-130px);
+}
+  .body-up-left {
+    text-align: center ;
+    padding: 0vh 5vw ;
+    flex: auto ;
+  }
+  .body-up-left > button {
+    margin: 0 auto ;
+    margin-bottom: 18vh ;
+  }
+  .body-up-right {
+    flex: auto;
+    max-height: 850px ;
+  }
+  .body-up-left > h1 {
+    font-size: 2rem ;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body-up-right {
+    background-image : url('../Assets/heroMobile.svg')
+  }
 }

@@ -83,4 +83,7 @@
   .header-links {
     display: none ;
   }
+  .header .main-button {
+    display: none ;
+  }
 }

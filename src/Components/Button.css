@@ -1,24 +1,21 @@
-.main-button {
+button.main-button {
   font-size: 16.3px ;
   color: white ;
   border: none ;
   outline: none ;
   border-radius: 40px ;
-  width: 150px ;
-  height: 50px ;
+  width: 175px ;
+  height: 45px ;
   font-family: 'Public Sans', sans-serif;
-  background-image: linear-gradient(90deg , rgb(50, 218, 103),rgb(104, 179, 190) ) ;
+  background: linear-gradient(90deg , rgb(50, 218, 103),rgb(104, 179, 190) ) ;
   cursor: pointer;
   transition: all .9s ease-in-out ;
+  -webkit-transition: all .9s ease-in-out ;
+  -moz-transition: all .9s ease-in-out ;
+  -ms-transition: all .9s ease-in-out ;
+  -o-transition: all .9s ease-in-out ;
 }
 
-.main-button:hover {
-  background-image: linear-gradient(90deg , #84E2A4, #7BD7E4 )
-
-}
-
-@media screen and (max-width: 800px) {
-  .main-button {
-    display: none ;
-  }
+button.main-button:hover {
+  background: linear-gradient(90deg , #84E2A4, #7BD7E4 )
 }
