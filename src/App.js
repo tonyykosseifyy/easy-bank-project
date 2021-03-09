@@ -2,6 +2,7 @@ import React, { useState } from 'react' ;
 import "./App.css";
 import Header from "./Components/Header";
 import Body from './Components/Body' ;
+import Footer from './Components/Footer'
 
 export default function App() {
   const [ open , setOpen ] = useState(false) ;
@@ -13,6 +14,7 @@ export default function App() {
     <div className="app">
       <Header updateOpen={setOpen} />
       <Body open={open} />
+      <Footer />
     </div>
   );
 }

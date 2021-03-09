@@ -1,0 +1,108 @@
+.footer {
+    background-color: #2D314E ;
+    display: flex ;
+    padding: 6vh 7vw ;
+    position: relative ;
+    justify-content: space-between ;
+}
+
+.footer-left {
+    display: flex ;
+}
+.footer-left-left {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-between; 
+    padding: 15px 0;
+}
+
+.social-media {
+    display: flex ;
+    align-items: center ;
+}
+.social-media > svg {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    margin-right: 18px ;
+    cursor: pointer ;
+    fill: white ;
+    transition: .3s ease ;
+    -webkit-transition: .3s ease ;
+    -moz-transition: .3s ease ;
+    -ms-transition: .3s ease ;
+    -o-transition: .3s ease ;
+}
+.social-media > svg:hover {
+    fill: #30CE93   ;
+}
+
+.footer-mid {
+    display: flex ;
+    margin-left: 3vw ;
+}
+.footer-mid > ul {
+    list-style-type: none;
+    color: white ;
+    margin: 0 4vw ;
+    padding: 0 ;
+}
+.footer-mid > ul > li {
+    margin: 15px 0 ;
+    cursor: pointer ;
+    transition: .3s ease ;
+    -webkit-transition: .3s ease ;
+    -moz-transition: .3s ease ;
+    -ms-transition: .3s ease ;
+    -o-transition: .3s ease ;
+}
+
+.footer-mid > ul > li:hover {
+    color: #30CE93
+}
+.footer-right {
+    display: flex ;
+    flex-direction: column;
+}
+.footer-right > p {
+    margin: 25px 0; 
+    color: #9DA0B3 ;
+}
+.footer-right > button {
+    align-self: flex-end ;
+}
+@media screen and (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-left {
+        flex-direction: column ;
+    }
+    .footer-mid {
+        flex-direction: column ;
+    }
+    .footer-right > button {
+        align-self: center ;
+    }
+    .footer-right > p {
+        margin: 20px auto  ;
+    }
+    .footer-mid {
+        margin: 30px auto ;
+        text-align: center ;
+    }
+    .footer-mid > ul {
+        margin: 0 ;
+    }
+    .footer-left-left {
+        align-items: center;
+        min-height: 100px ;
+    }
+    .footer-mid > ul > li {
+        margin-bottom: 15px ;
+        margin-top: 0 ;
+    }
+    
+}
