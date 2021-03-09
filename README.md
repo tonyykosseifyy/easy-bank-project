@@ -1,2 +1,2 @@
 # easy-bank-project
-Created with CodeSandbox
+deployed at https://easy-bank-a54d3.web.app/
