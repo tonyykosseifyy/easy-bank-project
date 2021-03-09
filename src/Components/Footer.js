@@ -3,7 +3,6 @@ import './Footer.css' ;
 import Button from './Button' ;
 
 function Footer() {
-    
     return (
         <div className='footer'>
             <div className='footer-left'>
