@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Footer.css' ;
-import { logo } from'../Assets/logo' ;
-import { youtube , facebook , twitter , pinterest , instagram } from '../Assets/icons'
 import Button from './Button' ;
 
 function Footer() {
