@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d78fcc7.chunk.css",
+    "main.js": "/static/js/main.6a1f791a.chunk.js",
+    "main.js.map": "/static/js/main.6a1f791a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a2fac6e4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a2fac6e4.js.map",
+    "static/js/2.fc88ad5d.chunk.js": "/static/js/2.fc88ad5d.chunk.js",
+    "static/js/2.fc88ad5d.chunk.js.map": "/static/js/2.fc88ad5d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8d78fcc7.chunk.css.map": "/static/css/main.8d78fcc7.chunk.css.map",
+    "static/js/2.fc88ad5d.chunk.js.LICENSE.txt": "/static/js/2.fc88ad5d.chunk.js.LICENSE.txt",
+    "static/media/Body.css": "/static/media/heroMobile.c2ed38d0.svg",
+    "static/media/image-confetti.67921b11.jpg": "/static/media/image-confetti.67921b11.jpg",
+    "static/media/image-currency.1b385bf9.jpg": "/static/media/image-currency.1b385bf9.jpg",
+    "static/media/image-mockups.48d35b17.png": "/static/media/image-mockups.48d35b17.png",
+    "static/media/image-plane.03db115d.jpg": "/static/media/image-plane.03db115d.jpg",
+    "static/media/image-restaurant.1951b576.jpg": "/static/media/image-restaurant.1951b576.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2fac6e4.js",
+    "static/js/2.fc88ad5d.chunk.js",
+    "static/css/main.8d78fcc7.chunk.css",
+    "static/js/main.6a1f791a.chunk.js"
+  ]
+}
