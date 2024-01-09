@@ -1,4 +1,4 @@
-# Bank Website
+# EasyBank Website
 
 ## Live Demo
 
