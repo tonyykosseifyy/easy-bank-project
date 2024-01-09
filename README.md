@@ -24,13 +24,13 @@ To get a development environment running, follow these simple steps:
 
 1. Clone the repository to your local machine:
 ```
-git clone https://github.com/tonyykosseifyy/Ip-Address-Project.git
+git clone https://github.com/tonyykosseifyy/easy-bank-project.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd Ip-Address-Project
+cd easy-bank-project
 ```
 
 3. Install the required dependencies:
